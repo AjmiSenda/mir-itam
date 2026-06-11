@@ -1,0 +1,2 @@
+This repository is initialized at /home/senda/Desktop/mir-itam. Project files will be created directly under /home/senda/Desktop/mir-itam.
+
