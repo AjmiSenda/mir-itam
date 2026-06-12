@@ -93,7 +93,7 @@ export default function TicketForm() {
                 <div style={s.field}>
                   <label style={s.label}>Statut</label>
                   <select value={form.status} onChange={e=>set('status',e.target.value)}>
-                    <option value="open">Ouvert</option>
+                    <option value="open">Ouverteeee</option>
                     <option value="in_progress">En cours</option>
                     <option value="resolved">Résolu</option>
                     <option value="closed">Fermé</option>

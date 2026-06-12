@@ -11,9 +11,7 @@ SECRET_KEY = config("DJANGO_SECRET_KEY")
 DEBUG = config("DJANGO_DEBUG", cast=bool, default=False)
 
 ALLOWED_HOSTS = [
-    h.strip()
-    for h in config("DJANGO_ALLOWED_HOSTS", default="localhost,127.0.0.1").split(",")
-    if h.strip()
+    ALLOWED_HOSTS = config("DJANGO_ALLOWED_HOSTS", default="*").split(",")
 ]
 
 INSTALLED_APPS = [
@@ -198,4 +196,5 @@ LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
 }
+
 
